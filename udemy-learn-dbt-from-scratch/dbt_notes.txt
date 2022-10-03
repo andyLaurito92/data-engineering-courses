@@ -1,0 +1,8 @@
+the ephemeral models are for make the queries of the models less complex
+and instead of using a with (select bla bla bla) , you only use a reference to the ephemeral model
+and dbt in execution time replace the reference with the query
+
+
+intermediate tables --> views/ephemeral
+
+also an ephimeral table can be used multiple times, you don't have to copy/paste as you would do with a cte

@@ -1,0 +1,23 @@
+<configuration>
+    <property>
+        <name>metastore.task.threads.always</name>
+        <value>org.apache.hadoop.hive.metastore.events.EventCleanerTask</value>
+    </property>
+    <property>
+        <name>metastore.expression.proxy</name>
+        <value>org.apache.hadoop.hive.metastore.DefaultPartitionExpressionProxy</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:;databaseName=/tmp/metastore_db;create=true</value>
+    </property>
+    <property>
+        <name>metastore.warehouse.dir</name>
+        <value>s3a://growth-data-mesh/</value>
+    </property>
+    <property>
+        <name>hive.metastore.sasl.enabled</name>
+        <value>false</value>
+    </property>
+
+</configuration>
